@@ -9,9 +9,9 @@ Here is a list of the EDA software, open-source hardware platforms, and manufact
 
 | Platform / Tool | Logo / Preview | Description |
 | :--- | :---: | :--- |
-| **[EasyEDA](https://easyeda.com/)** | <img src="https://easyeda.com/favicon.ico" width="28"> | Used for schematic capture and PCB layout design. |
-| **[OSHWLab](https://oshwlab.com/oshwlab/project_ugkqsemj)** | <img src="https://oshwlab.com/favicon.ico" width="28"> | Dedicated open-source hardware platform (Allows community members to instantly open complete schematics and PCBs in EasyEDA Pro for reproduction and updates). |
-| **[LCSC Electronics](https://lcsc.com/)** | <img src="https://lcsc.com/favicon.ico" width="28"> | Provides one-click BOM component online ordering. |
+| **[EasyEDA](https://easyeda.com/)** |<img width="100" height="100" alt="EasyEDA_Vert_W_BlueBG" src="https://github.com/user-attachments/assets/3fd026ae-3f5d-4c94-9bc0-8dc0636a136f" />| Used for schematic capture and PCB layout design. |
+| **[OSHWLab](https://oshwlab.com/oshwlab/project_ugkqsemj)** |<img width="100" height="100" alt="OSHWLab_Vert_W_BlueBG" src="https://github.com/user-attachments/assets/8fbffc63-61e7-4e63-85a9-5fa2ea5ab249" />| Dedicated open-source hardware platform (Allows community members to instantly open complete schematics and PCBs in EasyEDA Pro for reproduction and updates). |
+| **[LCSC Electronics](https://lcsc.com/)** |<img width="100" height="60" alt="logo-s" src="https://github.com/user-attachments/assets/372a5183-de39-4746-a919-5b115252aae3" />| Provides one-click BOM component online ordering. |
 | **[JLCPCB](https://jlcpcb.com/)** |<img width="100" height="100" alt="logo - blue" src="https://github.com/user-attachments/assets/8fe4bb3b-4ce2-450d-9e56-1b7aa62cfc92" />| PCB manufacturing and fabrication (Standard 2-layer process, 80 mm × 60 mm dimensions). |
 
 </div>
