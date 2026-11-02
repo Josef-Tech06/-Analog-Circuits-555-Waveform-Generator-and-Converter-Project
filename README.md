@@ -12,7 +12,8 @@ Here is a list of the EDA software, open-source hardware platforms, and manufact
 | **[EasyEDA](https://easyeda.com/)** | <img src="https://easyeda.com/favicon.ico" width="28"> | Used for schematic capture and PCB layout design. |
 | **[OSHWLab](https://oshwlab.com/oshwlab/project_ugkqsemj)** | <img src="https://oshwlab.com/favicon.ico" width="28"> | Dedicated open-source hardware platform (Allows community members to instantly open complete schematics and PCBs in EasyEDA Pro for reproduction and updates). |
 | **[LCSC Electronics](https://lcsc.com/)** | <img src="https://lcsc.com/favicon.ico" width="28"> | Provides one-click BOM component online ordering. |
-| **[JLCPCB](https://jlcpcb.com/)** | <img src="https://jlcpcb.com/favicon.ico" width="28"> | PCB manufacturing and fabrication (Standard 2-layer process, 80 mm × 60 mm dimensions). |
+| **[JLCPCB](https://jlcpcb.com/)** | <img width="400" height="400" alt="logo - blue" src="https://github.com/user-attachments/assets/904368db-c0b7-4102-8ae2-d9642f2ab255" />
+ | PCB manufacturing and fabrication (Standard 2-layer process, 80 mm × 60 mm dimensions). |
 
 </div>
 
