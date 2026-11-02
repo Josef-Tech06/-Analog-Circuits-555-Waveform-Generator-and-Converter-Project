@@ -66,7 +66,7 @@ When designing the schematic, refer to the following component list. You can fin
 Component List (BOM)
 以下是根据选中内容整理的 Markdown 表格：
 
-```markdown
+
 | Item | Name | Value / Parameter | Package | Part No. |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | Electrolytic Capacitor | 10uF | CAP-TH_BD5.0-P2.00-D0.8-FD | C43347 |
@@ -88,7 +88,7 @@ Component List (BOM)
 | 17 | Integrated Circuit (IC) | NE555 | DIP-8_L9.8-W6.6-P2.54-LS7.6-BL | C398063 |
 | 18 | Copper Standoff | M3 Screw | M3 Screw | Common Library |
 
-```
+
 The canvas drawing is set to A4 size by default, but you can change it to A5 size in the Canvas Properties on the right panel. After searching for components, connect and place them according to the reference schematic. Some components retrieved from the search may look slightly different from those in the reference diagram; as long as the connected nets for each pin are identical, it is fine. Alternatively, you can click on a component, right-click, and select "Modify Symbol" to align the visual style of the component with the reference diagram (schematics can have multiple visual styles, and pin ordering may vary).
 
 <img width="1064" height="603" alt="cc275493fae44cbabccac4b3c3c24fe8" src="https://github.com/user-attachments/assets/dd2b5019-de31-4f8d-b4f0-809ceb508f8e" />
