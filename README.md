@@ -4,6 +4,7 @@ This project designs a square wave and sine wave generation circuit based on the
 <h1>Tools & Ecosystem</h1>
 EDA Software: [EasyEDA Pro](https://easyeda.com/)  (For schematic capture and PCB layout design)
 
+
 Open-Source Platform: [OSHWLab](https://oshwlab.com/oshwlab/project_ugkqsemj) This is EasyEDA's dedicated open-source hardware platform. By clicking Open the Design Drawing via the provided link, users can instantly load the complete schematic and PCB design into EasyEDA Pro, facilitating easy reproduction and updates by community members.
 
 Component Sourcing: [LCSC Electronics](https://lcsc.com/) (For one-click BOM component ordering)
