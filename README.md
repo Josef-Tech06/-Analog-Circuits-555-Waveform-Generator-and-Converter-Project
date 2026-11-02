@@ -1,8 +1,7 @@
 # -Analog-Circuits-555-Waveform-Generator-and-Converter-Project
 This project designs a square wave and sine wave generation circuit based on the NE555 (timer) and TL072 (general-purpose dual operational amplifier).
 
-**1. Project Features**
-
+<h1>1. Project Features</h1>
 High Integration: Combining digital and analog circuits, it is a typical mixed-signal system.
 Practicality: Covers the complete electronic fabrication process, from circuit simulation to schematic design, PCB layout, soldering, and debugging.
 Low Cost: The core ICs (NE555 and TL072) are widely available and inexpensive, while peripheral components are standard resistors and capacitors, resulting in low project costs and suitability for large-scale teaching.
