@@ -2,12 +2,14 @@
 This project designs a square wave and sine wave generation circuit based on the NE555 (timer) and TL072 (general-purpose dual operational amplifier).
 
 **1. Project Features**
+
 High Integration: Combining digital and analog circuits, it is a typical mixed-signal system.
 Practicality: Covers the complete electronic fabrication process, from circuit simulation to schematic design, PCB layout, soldering, and debugging.
 Low Cost: The core ICs (NE555 and TL072) are widely available and inexpensive, while peripheral components are standard resistors and capacitors, resulting in low project costs and suitability for large-scale teaching.
  
 
 **2. Circuit Principle**
+
 According to the design requirements, a 2 kHz square wave must first be generated using a 555 timer circuit. The sine wave can then be produced by passing the generated square wave through a second-order band-pass filter. The circuit system block diagram is shown below:
 
 
@@ -16,6 +18,7 @@ According to the design requirements, a 2 kHz square wave must first be generate
  
 
 **2.1 Square Wave Generation Circuit**
+
 A square wave circuit with adjustable frequency and duty cycle is designed using a 555 timer. The 555 timer derives its name from the three 5 kΩ internal resistors used to establish reference voltages. Due to its low cost and simple peripheral circuitry, the 555 family of ICs is widely used in timers, pulse generators, and oscillator circuits. Thanks to these features, the 555 timer is extremely versatile and frequently found in various small electronics projects.
 
  
@@ -47,6 +50,7 @@ According to the formulas, both the frequency and duty cycle are jointly determi
  
 
 **2.2 Sine Wave Generation Circuit**
+
 According to the Fourier transform of a square wave, a square wave is composed of multiple sine waves with different amplitudes and frequencies. The function of a band-pass filter is to retain the desired waveform while filtering out redundant frequencies. Based on the design requirements, the corresponding circuit can be designed using the parameters of the second-order band-pass filter: center frequency, gain, and set bandwidth.
 
 <img width="1020" height="442" alt="837a05f2c17e45d7a5b53612944fd368" src="https://github.com/user-attachments/assets/2d2853eb-6c3b-414d-a767-eaa2c5e41b8c" />
@@ -60,6 +64,7 @@ RP1 is the resistor that determines the center frequency. Due to calculated para
  
 
 **3.1 Schematic Design**
+
 When designing the schematic, refer to the following component list. You can find and place the specified components by searching for their component numbers in the JLCPCB EDA online component library. Note that M3 standoffs can be found in the mounting components of the common library.
 
  
@@ -105,16 +110,19 @@ After completing the schematic design, first make sure to check whether the circ
  
 
 (1) Board Outline Design
+
 After generating the PCB, you need to define the board outline. The dimensions can be set based on the number of components and layout requirements. Since JLCPCB provides free PCB prototyping within a 10 cm × 10 cm size limit, this project adopts a rectangle of 80 mm in length, 60 mm in width, and a corner radius of 2 mm as the PCB size based on practical needs.
 
  
 
 (2) Component Layout
+
 When components are transferred from the schematic to the PCB, their initial layout can be quite messy. The second step of PCB design is to categorize and arrange these components. The placement strategy is to cluster components belonging to the same circuit module together. You can quickly lay out each circuit module using the Layout Transfer feature provided by JLCPCB EDA. Note that interface connectors should be placed along the board edges to facilitate wiring operations.
 
  
 
 (3) PCB Routing
+
 When designing a single-layer board, the top layer traces are red by default. Routing refers to connecting copper traces on the circuit board. Simply select the appropriate layer under Layers & Elements and connect pads belonging to the same net. Although it looks like a simple matching game, it requires patient adjustments, as component placement directly affects routing difficulty. Here are a few reference suggestions for routing this project:
 
 Set power traces to 30 mil width and signal traces to 20 mil width.
