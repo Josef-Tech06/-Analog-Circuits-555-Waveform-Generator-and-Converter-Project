@@ -1,15 +1,21 @@
 # -Analog-Circuits-555-Waveform-Generator-and-Converter-Project
 This project designs a square wave and sine wave generation circuit based on the NE555 (timer) and TL072 (general-purpose dual operational amplifier).
 
-<h1>Tools & Ecosystem</h1>
+<div align="center">
 
-EDA Software: [EasyEDA](https://easyeda.com/)  (For schematic capture and PCB layout design)
+# 🛠️ Tools & Ecosystem
 
-Open-Source Platform: [OSHWLab](https://oshwlab.com/oshwlab/project_ugkqsemj) This is EasyEDA's dedicated open-source hardware platform. By clicking Open the Design Drawing via the provided link, users can instantly load the complete schematic and PCB design into EasyEDA Pro, facilitating easy reproduction and updates by community members.  
+Here is a list of the EDA software, open-source hardware platforms, and manufacturing services used in this project:
 
-Component Sourcing: [LCSC Electronics](https://lcsc.com/) (For one-click BOM component ordering)
+| Platform / Tool | Logo / Preview | Description |
+| :--- | :---: | :--- |
+| **[EasyEDA](https://easyeda.com/)** | <img src="https://easyeda.com/favicon.ico" width="28"> | Used for schematic capture and PCB layout design. |
+| **[OSHWLab](https://oshwlab.com/oshwlab/project_ugkqsemj)** | <img src="https://oshwlab.com/favicon.ico" width="28"> | Dedicated open-source hardware platform (Allows community members to instantly open complete schematics and PCBs in EasyEDA Pro for reproduction and updates). |
+| **[LCSC Electronics](https://lcsc.com/)** | <img src="https://lcsc.com/favicon.ico" width="28"> | Provides one-click BOM component online ordering. |
+| **[JLCPCB](https://jlcpcb.com/)** | <img src="https://jlcpcb.com/favicon.ico" width="28"> | PCB manufacturing and fabrication (Standard 2-layer process, 80 mm × 60 mm dimensions). |
 
-PCB Manufacturing: [JLCPCB](https://jlcpcb.com/) (Fabbed with standard 2-layer process, 80 mm × 60 mm dimensions)
+</div>
+
 
 <h1>1. Project Features</h1>
 High Integration: Combining digital and analog circuits, it is a typical mixed-signal system.
