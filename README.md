@@ -1,7 +1,7 @@
 # -Analog-Circuits-555-Waveform-Generator-and-Converter-Project
 This project designs a square wave and sine wave generation circuit based on the NE555 (timer) and TL072 (general-purpose dual operational amplifier).
 
-<img width="1187" height="737" alt="屏幕截图 2026-10-31 141053" src="https://github.com/user-attachments/assets/88288f1c-48db-4b24-9d07-48c126e887f5" /><img width="497" height="346" alt="07761c5688a84e75ac0cf7a9bd89c7f6" src="https://github.com/user-attachments/assets/c6203efe-defb-4ce7-919e-bd1684395c36" />
+<img width="497" height="308" alt="屏幕截图 2026-10-31 141053" src="https://github.com/user-attachments/assets/88288f1c-48db-4b24-9d07-48c126e887f5" /><img width="497" height="346" alt="07761c5688a84e75ac0cf7a9bd89c7f6" src="https://github.com/user-attachments/assets/c6203efe-defb-4ce7-919e-bd1684395c36" />
 
 
 
