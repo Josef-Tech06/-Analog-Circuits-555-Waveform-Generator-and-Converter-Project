@@ -7,16 +7,16 @@ Practicality: Covers the complete electronic fabrication process, from circuit s
 Low Cost: The core ICs (NE555 and TL072) are widely available and inexpensive, while peripheral components are standard resistors and capacitors, resulting in low project costs and suitability for large-scale teaching.
  
 
-**2. Circuit Principle**
+<h1>2. Circuit Principle</h1>
 
 According to the design requirements, a 2 kHz square wave must first be generated using a 555 timer circuit. The sine wave can then be produced by passing the generated square wave through a second-order band-pass filter. The circuit system block diagram is shown below:
 
-
+<div align="center">
 <img width="746" height="99" alt="822d66b7d00b46c78064cadd01edfe7a" src="https://github.com/user-attachments/assets/ac46ed35-42d0-41c1-87c5-4349eb54d5c3" />
-
+</div>
  
 
-**2.1 Square Wave Generation Circuit**
+<h2>2.1 Square Wave Generation Circuit</h2>
 
 A square wave circuit with adjustable frequency and duty cycle is designed using a 555 timer. The 555 timer derives its name from the three 5 kΩ internal resistors used to establish reference voltages. Due to its low cost and simple peripheral circuitry, the 555 family of ICs is widely used in timers, pulse generators, and oscillator circuits. Thanks to these features, the 555 timer is extremely versatile and frequently found in various small electronics projects.
 
@@ -35,10 +35,10 @@ A square wave circuit with adjustable frequency and duty cycle is designed using
 
 A 555 timer can be used to construct a monostable circuit. To operate it as an astable multivibrator that triggers continuously in each cycle, Pins 2 and 6 must be connected together. If you want to make both the duty cycle and frequency adjustable, two variable resistors and two diodes can be connected to the circuit, as shown in the figure below:
 
+<div align="center">
 <img width="684" height="328" alt="67f648bfdab241bf9cab23cf96479c0b" src="https://github.com/user-attachments/assets/d4e6a98d-3bb6-487f-8bed-46726cef454b" />
+</div>
 
-
- 
 
 When the power is turned on, capacitor C1 is charged through RP1 and D1. When the capacitor voltage reaches 2/3Vcc​, it begins to discharge through D2, RP2, and RP1 into the internal discharge transistor at Pin 7. When it discharges down to 1/3Vcc​, this charge-discharge cycle repeats continuously.
 
@@ -48,29 +48,29 @@ According to the formulas, both the frequency and duty cycle are jointly determi
 
  
 
-**2.2 Sine Wave Generation Circuit**
+<h2>2.2 Sine Wave Generation Circuit**</h2>
 
 According to the Fourier transform of a square wave, a square wave is composed of multiple sine waves with different amplitudes and frequencies. The function of a band-pass filter is to retain the desired waveform while filtering out redundant frequencies. Based on the design requirements, the corresponding circuit can be designed using the parameters of the second-order band-pass filter: center frequency, gain, and set bandwidth.
 
+<div align="center">
 <img width="1020" height="442" alt="837a05f2c17e45d7a5b53612944fd368" src="https://github.com/user-attachments/assets/2d2853eb-6c3b-414d-a767-eaa2c5e41b8c" />
-
+</div>
 
 RP1 is the resistor that determines the center frequency. Due to calculated parameter deviations and component tolerances, RP1 is replaced with a 100 Ω variable resistor. Since a single power supply is used, R3 and R4 are employed to pull up (bias) the voltage.
 
  
 
-**3 PCB Design**
+<h1>3 PCB Design</h1>
  
 
-**3.1 Schematic Design**
+<h2>3.1 Schematic Design</h2>
 
 When designing the schematic, refer to the following component list. You can find and place the specified components by searching for their component numbers in the JLCPCB EDA online component library. Note that M3 standoffs can be found in the mounting components of the common library.
 
  
-
+<div align="center">
 Component List (BOM)
-以下是根据选中内容整理的 Markdown 表格：
-
+</div>
 
 | Item | Name | Value / Parameter | Package | Part No. |
 | :--- | :--- | :--- | :--- | :--- |
@@ -96,31 +96,30 @@ Component List (BOM)
 
 The canvas drawing is set to A4 size by default, but you can change it to A5 size in the Canvas Properties on the right panel. After searching for components, connect and place them according to the reference schematic. Some components retrieved from the search may look slightly different from those in the reference diagram; as long as the connected nets for each pin are identical, it is fine. Alternatively, you can click on a component, right-click, and select "Modify Symbol" to align the visual style of the component with the reference diagram (schematics can have multiple visual styles, and pin ordering may vary).
 
+<div align="center">
 <img width="1064" height="603" alt="cc275493fae44cbabccac4b3c3c24fe8" src="https://github.com/user-attachments/assets/dd2b5019-de31-4f8d-b4f0-809ceb508f8e" />
-
+</div>
  
 
-
-
-**3.2 PCB Design**
+<h2>3.2 PCB Design</h2>
 
 After completing the schematic design, first make sure to check whether the circuit is properly connected and if there are any missing or unconnected nets. Once everything is verified to be error-free, click Design -> Update/Convert Schematic to PCB in the top menu bar of the schematic editor to proceed with PCB design.
 
  
 
-(1) Board Outline Design
+<h3>(1) Board Outline Design</h3>
 
 After generating the PCB, you need to define the board outline. The dimensions can be set based on the number of components and layout requirements. Since JLCPCB provides free PCB prototyping within a 10 cm × 10 cm size limit, this project adopts a rectangle of 80 mm in length, 60 mm in width, and a corner radius of 2 mm as the PCB size based on practical needs.
 
  
 
-(2) Component Layout
+<h3>(2) Component Layout</h3>
 
 When components are transferred from the schematic to the PCB, their initial layout can be quite messy. The second step of PCB design is to categorize and arrange these components. The placement strategy is to cluster components belonging to the same circuit module together. You can quickly lay out each circuit module using the Layout Transfer feature provided by JLCPCB EDA. Note that interface connectors should be placed along the board edges to facilitate wiring operations.
 
  
 
-(3) PCB Routing
+<h3>(3) PCB Routing</h3>
 
 When designing a single-layer board, the top layer traces are red by default. Routing refers to connecting copper traces on the circuit board. Simply select the appropriate layer under Layers & Elements and connect pads belonging to the same net. Although it looks like a simple matching game, it requires patient adjustments, as component placement directly affects routing difficulty. Here are a few reference suggestions for routing this project:
 
@@ -130,36 +129,39 @@ GND does not require manual routing—simply apply copper pour on the bottom lay
 Prioritize straight lines during routing. When turns are necessary, use obtuse angles or arcs instead of sharp turns.
 After completing the routing, add appropriate silkscreen labels to indicate the purpose of the PCB and the functions of the interfaces.
 Remaining blank areas can be used to add explanatory text or images.
- 
+
+ <div align="center">
 <img width="1498" height="572" alt="c041b61293c74290b98f730f129a60b4" src="https://github.com/user-attachments/assets/931254c5-9b8b-462d-9691-a85504d14987" />
-
+</div>
 
  
-**4 Soldering and Commissioning**
+<h1>4 Soldering and Commissioning**</h1>
  
 
-**4.1 Soldering Precautions**
+<h2>4.1 Soldering Precautions</h2>
  
 
 During soldering, refer to the Bill of Materials (BOM) to match the component locations on the PCB. You can download the interactive HTML soldering assistance tool to view component placements on your computer or mobile device.
 
- 
+ <div align="center">
 <img width="1092" height="763" alt="f6837f58954b4c949b1ea14db7a1c9c7" src="https://github.com/user-attachments/assets/2869d1ef-2ec1-4f32-b99a-e70c1127657a" />
-
-
-
+</div>
+<div align="center">
 Soldering Assistance Tool
+</div>
 
+<div align="center">
 <img width="1917" height="908" alt="73f61ad8dc4c41f297ab559d4522c17e" src="https://github.com/user-attachments/assets/43df6cdb-3adb-4cd4-961f-0380ece7452f" />
-
-
+</div>
+<div align="center">
 Soldering Assistance Tool Interface
+</div>
 
 The soldering order follows the principle of "from low to high, and from signal source to load." The soldering sequence and reference designators are shown in the table below; the actual designators are subject to your own PCB design.
 
  
 
-**4.2 Commissioning Methods**
+<h2>4.2 Commissioning Methods</h2>
 
 The instruments used during testing include a multimeter, an oscilloscope, and a laboratory power supply.
 
