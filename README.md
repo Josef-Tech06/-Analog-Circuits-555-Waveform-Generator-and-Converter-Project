@@ -1,12 +1,13 @@
 # -Analog-Circuits-555-Waveform-Generator-and-Converter-Project
 This project designs a square wave and sine wave generation circuit based on the NE555 (timer) and TL072 (general-purpose dual operational amplifier).
-1. Project Features
+
+**1. Project Features**
 High Integration: Combining digital and analog circuits, it is a typical mixed-signal system.
 Practicality: Covers the complete electronic fabrication process, from circuit simulation to schematic design, PCB layout, soldering, and debugging.
 Low Cost: The core ICs (NE555 and TL072) are widely available and inexpensive, while peripheral components are standard resistors and capacitors, resulting in low project costs and suitability for large-scale teaching.
  
 
-2. Circuit Principle
+**2. Circuit Principle**
 According to the design requirements, a 2 kHz square wave must first be generated using a 555 timer circuit. The sine wave can then be produced by passing the generated square wave through a second-order band-pass filter. The circuit system block diagram is shown below:
 
 
@@ -14,7 +15,7 @@ According to the design requirements, a 2 kHz square wave must first be generate
 
  
 
-2.1 Square Wave Generation Circuit
+**2.1 Square Wave Generation Circuit**
 A square wave circuit with adjustable frequency and duty cycle is designed using a 555 timer. The 555 timer derives its name from the three 5 kΩ internal resistors used to establish reference voltages. Due to its low cost and simple peripheral circuitry, the 555 family of ICs is widely used in timers, pulse generators, and oscillator circuits. Thanks to these features, the 555 timer is extremely versatile and frequently found in various small electronics projects.
 
  
@@ -45,7 +46,7 @@ According to the formulas, both the frequency and duty cycle are jointly determi
 
  
 
-2.2 Sine Wave Generation Circuit
+**2.2 Sine Wave Generation Circuit**
 According to the Fourier transform of a square wave, a square wave is composed of multiple sine waves with different amplitudes and frequencies. The function of a band-pass filter is to retain the desired waveform while filtering out redundant frequencies. Based on the design requirements, the corresponding circuit can be designed using the parameters of the second-order band-pass filter: center frequency, gain, and set bandwidth.
 
 <img width="1020" height="442" alt="837a05f2c17e45d7a5b53612944fd368" src="https://github.com/user-attachments/assets/2d2853eb-6c3b-414d-a767-eaa2c5e41b8c" />
@@ -55,10 +56,10 @@ RP1 is the resistor that determines the center frequency. Due to calculated para
 
  
 
-3 PCB Design
+**3 PCB Design**
  
 
-3.1 Schematic Design
+**3.1 Schematic Design**
 When designing the schematic, refer to the following component list. You can find and place the specified components by searching for their component numbers in the JLCPCB EDA online component library. Note that M3 standoffs can be found in the mounting components of the common library.
 
  
@@ -97,7 +98,8 @@ The canvas drawing is set to A4 size by default, but you can change it to A5 siz
 
 
 
-3.2 PCB Design
+**3.2 PCB Design**
+
 After completing the schematic design, first make sure to check whether the circuit is properly connected and if there are any missing or unconnected nets. Once everything is verified to be error-free, click Design -> Update/Convert Schematic to PCB in the top menu bar of the schematic editor to proceed with PCB design.
 
  
@@ -126,10 +128,10 @@ Remaining blank areas can be used to add explanatory text or images.
 
 
  
-4 Soldering and Commissioning
+**4 Soldering and Commissioning**
  
 
-4.1 Soldering Precautions
+**4.1 Soldering Precautions**
  
 
 During soldering, refer to the Bill of Materials (BOM) to match the component locations on the PCB. You can download the interactive HTML soldering assistance tool to view component placements on your computer or mobile device.
@@ -150,7 +152,7 @@ The soldering order follows the principle of "from low to high, and from signal 
 
  
 
-4.2 Commissioning Methods
+**4.2 Commissioning Methods**
 
 The instruments used during testing include a multimeter, an oscilloscope, and a laboratory power supply.
 
